@@ -1,0 +1,19 @@
+image_root: 'data'
+bert_config: 'configs/config_bert.json'
+
+epsilon: 1
+num_iters: 100
+step_size: 1
+norm_type: l_inf
+
+output_dir: 'output/cifar100/Ad/test/both1/ep1/num100'
+log_name: 'log.txt'
+
+image_encoder: 'ViT-B/32'
+text_encoder: 'bert-base-uncased'
+
+
+batch_size_test: 128
+test_size: 
+random_choice: False
+

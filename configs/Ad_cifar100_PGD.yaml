@@ -1,0 +1,28 @@
+train_image_root: 'data/'
+test_image_root: 'data/'
+bert_config: 'configs/config_bert.json'
+
+epsilon: 1
+num_iters: 10
+step_size: 1
+norm_type: 'l_inf'
+
+output_dir: 'output/cifar100/Ad/train/both1/'
+model_savename: 'cifar100_VIT32_PGD'
+save_dir: 'checkpoints'
+log_name: 'log.txt'
+
+image_encoder: 'ViT-B/32'
+text_encoder: 'bert-base-uncased'
+
+batch_size_train: 256
+batch_size_test: 256
+train_size: 
+test_size: 1000 
+train_random_choice: False
+test_random_choice: True
+
+num_epoches: 30
+adv_train: True
+full_tuning: True
+optimizer: {opt: adamW, lr: 1e-6}
