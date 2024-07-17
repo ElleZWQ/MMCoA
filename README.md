@@ -60,9 +60,9 @@ Ensure to replace placeholder paths (e.g., `[config path]`, `[your test yaml pat
 
 **Restrictive License Agreement**
 
-All rights reserved. The source code, documentation, and other related files herein are confidential and provided exclusively for use during the blind review process of ACM MM. Unauthorized copying of files, distribution of this software, or use of this content for any purposes other than evaluation by reviewers as part of the ACM MM review process is strictly prohibited.
+All rights reserved. Unauthorized copying of files, distribution of this software, or use of this content for any purposes other than evaluation by reviewers as part of the ACM MM review process is strictly prohibited.
 
-By accessing this code, you acknowledge and agree that it is intended solely for review and evaluation purposes and must not be distributed, reproduced, modified, or publicly displayed. Violation of these terms may result in disqualification of the submission and further legal action.
+Violation of these terms may result in disqualification of the submission and further legal action.
 
 ## Citation
 
