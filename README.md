@@ -89,5 +89,5 @@ If you have any questions or feedback, please create an issue on this repository
 
 ## Acknowledgements
 
-This implementation is based on / inspired by [ZSRobust4FoundationModel](https://github.com/cvlab-columbia/ZSRobust4FoundationModel.git).
+This implementation is based on [ZSRobust4FoundationModel](https://github.com/cvlab-columbia/ZSRobust4FoundationModel.git).
 
