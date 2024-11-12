@@ -8,15 +8,15 @@ Official implementation of the paper "[Revisiting the Adversarial Robustness of 
   <img src="model.png" alt="main figure" width="70%">
 </div>
 
-> **Abstract:** *Pretrained vision-language models (VLMs) like CLIP have shown impressive generalization performance across various downstream tasks, yet they remain vulnerable to adversarial attacks. While prior research has primarily concentrated on improving the adversarial robustness of image encoders to guard against attacks on images, the exploration of text-based and multimodal attacks has largely been overlooked. In this work, we initiate the first known and comprehensive effort to study adapting vision-language models for adversarial robustness under the multimodal attack. Firstly, we introduce a multimodal attack strategy and investigate the impact of different attacks. We then propose a multimodal contrastive adversarial training loss, aligning the clean and adversarial text embeddings with the adversarial and clean visual features, to enhance the adversarial robustness of both image and text encoders of CLIP. Extensive experiments on 15 datasets across two tasks demonstrate that our method significantly improves the adversarial robustness of CLIP. Interestingly, we find that the model fine-tuned against multimodal adversarial attacks exhibits greater robustness than its counterpart fine-tuned solely against image-based attacks, even in the context of image attacks, which may open up new possibilities for enhancing the security of VLMs.*
+> **Abstract:** *Pretrained vision-language models (VLMs) like CLIP exhibit exceptional generalization across diverse downstream tasks. While recent studies reveal their vulnerability to adversarial attacks, research to date has primarily focused on enhancing the robustness of image encoders against image-based attacks, with defenses against text-based and multimodal attacks remaining largely unexplored. To this end, this work presents the first comprehensive study on improving the adversarial robustness of VLMs against attacks targeting image, text, and multimodal inputs. This is achieved by proposing multimodal contrastive adversarial training (MMCoA). Such an approach strengthens the robustness of both image and text encoders by aligning the clean text embeddings with adversarial image embeddings, and adversarial text embeddings with clean image embeddings. The robustness of the proposed MMCoA is examined against existing defense methods over image, text, and multimodal attacks on the CLIP model. Extensive experiments on 15 datasets across two tasks reveal the characteristics of different adversarial defense methods under distinct distribution shifts and dataset complexities across the three attack types.  This paves the way for a unified framework of adversarial robustness against different modality attacks, opening up new possibilities for securing VLMs against multimodal attacks.*
 
 <details>
 
 <summary>Main Contributions</summary>
 
-- To the best of our knowledge, we initiate the first known and comprehensive effort to study adapting VLMs for adversarial robustness under the multimodal attack.
-- We propose a simple yet effective **M**ulti**m**odal **Co**ntrastive **A**dversarial training loss, which can effectively enhance the adversarial robustness of both image and text encoders.
-- Extensive experiments on 15 datasets for two tasks demonstrate that our method can significantly enhance the adversarial robustness of CLIP. Meanwhile, our detailed analyses can offer valuable insights to enhance the security of VLMs.
+- To the best of our knowledge, we conduct the first comprehensive study aimed at enhancing the adversarial robustness of VLMs against attacks targeting visual, textual, and multimodal inputs.
+- We propose the Multimodal Contrastive Adversarial training (MMCoA), which effectively enhances the adversarial robustness of both image and text encoders.
+- Extensive experiments and detailed analysis on 15 datasets for two tasks under three types of attacks reveal the performance and characteristics of different adversarial defense methods, providing valuable insights for enhancing the security of VLMs.
 
 </details>
 
@@ -84,7 +84,7 @@ If you find this code useful in your research, please consider citing our paper:
 
 ## Contact
 
-If you have any questions or feedback, please create an issue on this repository or feel free to contact us at Zhouwanqistu@163.com or baishuanghao@stu.xjtu.edu.cn.
+If you have any questions or feedback, please create an issue on this repository or feel free to contact us at Zhouwanqistu@163.com.
 
 
 ## Acknowledgements
